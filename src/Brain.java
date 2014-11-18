@@ -392,13 +392,15 @@ public class Brain {
        
        miMenor[29] = lukazieviesk(miPontAtrasado, miCoesPouca, miAcesPouca);
        infRegra[29] = calcularMiQualRuim(miMenor[29]);
-              
+        
        for (int x=0; x<=29; x++){
            somatorio1 = somatorio1 + (infRegra[x]*miMenor[x]);
            somatorio2 = somatorio2 + miMenor[x];
        }
        
        saida = somatorio1/somatorio2;
+       
+       //vamos dizer que eu faça essa mudança no arquivo
        
        return saida;
    }
